@@ -1,0 +1,23 @@
+.NavigationItems {
+  display: flex;
+  align-items: center;
+}
+
+.NavigationItems ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1025px) {
+  .NavigationItems {
+    margin-top: 3rem;
+  }
+
+  .NavigationItems ul {
+    flex-direction: column;
+    width: 100%;
+  }
+}

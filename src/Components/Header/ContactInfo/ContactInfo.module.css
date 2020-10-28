@@ -1,0 +1,70 @@
+.ContactInfo {
+  background-color: black;
+  color: rgb(192, 192, 192);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 3rem;
+  transition: padding 0.7s;
+  font-size: 16px;
+}
+
+.mediaHandles {
+  display: flex;
+  align-items: center;
+}
+
+.mediaHandles > span {
+  margin: 2px 0;
+}
+
+.mediaHandles img {
+  width: 1.1rem;
+  margin-left: 0.8rem;
+}
+
+.callUs {
+  display: flex;
+  align-items: center;
+}
+
+.callUs img {
+  width: 1.1rem;
+  margin-right: 0.5rem;
+  transform: rotate(10deg);
+}
+
+.numbers {
+  font-family: "Gelasio", serif;
+  white-space: nowrap;
+}
+
+@media (max-width: 550px) {
+  .ContactInfo {
+    padding: 1rem 1.3rem;
+  }
+
+  .mediaHandles {
+    margin-right: 5px;
+  }
+
+  .callUs {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mediaHandles {
+    width: 80px;
+    display: block;
+  }
+
+  .mediaHandles img {
+    margin: 0;
+    margin-right: 0.5rem;
+    margin-top: 3px;
+  }
+
+  .callUs {
+    width: 150px;
+  }
+}

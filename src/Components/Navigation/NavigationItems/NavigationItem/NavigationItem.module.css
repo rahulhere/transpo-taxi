@@ -1,0 +1,42 @@
+.NavigationItem {
+  margin: 5px;
+}
+
+.NavigationItem a {
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+  font-weight: bold;
+  padding: 1rem 1.7rem;
+  outline: none;
+  transition: color 0.5s;
+}
+
+.NavigationItem a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.NavigationItem a.active {
+  border-bottom: 3px solid #fdb813;
+  color: #fdb813;
+}
+
+@media (max-width: 1025px) {
+  .NavigationItem {
+    padding: 0.7rem;
+  }
+
+  .NavigationItem a {
+    padding: 0;
+    transition: color 0.3s;
+  }
+
+  .NavigationItem a:hover {
+    color: white;
+    border-bottom: none;
+  }
+
+  .NavigationItem a.active {
+    border-bottom: 0;
+  }
+}

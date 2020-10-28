@@ -1,0 +1,15 @@
+.Button {
+  outline: none;
+  border: 0;
+  background-color: #fdb813;
+  padding: 1rem 2.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.Button:hover {
+  background-color: #ffce5c;
+}
