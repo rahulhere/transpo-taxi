@@ -1,0 +1,49 @@
+.QuickLinks {
+  margin-left: 20%;
+}
+
+.QuickLinks h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.QuickLinks nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.QuickLinks nav ul li {
+  margin: 0.35rem 0;
+}
+
+.QuickLinks nav ul li a {
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  font-size: 0.93rem;
+  transition: color 0.4s;
+}
+
+.QuickLinks a:hover {
+  color: #f5d280;
+}
+
+.QuickLinks a.active {
+  color: #fdb813;
+}
+
+@media (max-width: 950px) {
+  .QuickLinks h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .QuickLinks {
+    margin-left: 0;
+  }
+
+  .QuickLinks h2 {
+    margin-bottom: 0.8rem;
+  }
+}

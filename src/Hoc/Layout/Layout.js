@@ -3,23 +3,14 @@ import Aux from "./../Auxilliary/Auxillary";
 import Header from "./../../Components/Header/Header";
 import Backdrop from "../../Components/UI/Backdrop/Backdrop";
 import SideDrawer from "../../Components/UI/SideDrawer/SideDrawer";
-import { gsap } from "gsap/all";
 import { useMediaQuery } from "react-responsive";
+import Footer from "./../../Components/Footer/Footer";
 
 const Layout = (props) => {
   const [showSideDrawer, _setShowSideDrawer] = useState(false);
-  const [sideDrawerRef, _setSideDrawerRef] = useState(null);
 
   let setShowSideDrawer = (bool) => {
     _setShowSideDrawer(bool);
-    gsap.to(sideDrawerRef, {
-      x: bool ? 0 : "100%",
-      duration: 0.5,
-    });
-  };
-
-  let setSideDrawerRef = (element) => {
-    _setSideDrawerRef(element);
   };
 
   let backdrop = showSideDrawer ? (
@@ -34,9 +25,14 @@ const Layout = (props) => {
     <Aux>
       <Header showSideDrawer={setShowSideDrawer} />
       {backdrop}
-      <SideDrawer show={showSideDrawer} setRef={setSideDrawerRef} />
+      <SideDrawer
+        show={showSideDrawer}
+        styles={{
+          transform: showSideDrawer ? "translateX(0)" : "translateX(100%)",
+        }}
+      />
       {props.children}
-      And then footer will be here too
+      <Footer />
     </Aux>
   );
 };

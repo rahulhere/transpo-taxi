@@ -1,0 +1,23 @@
+.SubFooter {
+  background-color: #000000;
+  color: rgb(224, 224, 224);
+  padding: 1rem 10%;
+  display: flex;
+  align-items: center;
+}
+
+.Copyright {
+  margin-right: auto;
+  font-size: 1rem;
+}
+.Name {
+  font-weight: bolder;
+}
+
+.SubFooter img {
+  background-color: rgb(63, 63, 63);
+  width: 2rem;
+  padding: 5px;
+  margin: 0 0.3rem;
+  border-radius: 100%;
+}

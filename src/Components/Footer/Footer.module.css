@@ -1,0 +1,26 @@
+.Footer {
+  font-size: 0.88rem;
+}
+
+.Footer .mainFooter {
+  background-color: #1b1b1b;
+  color: rgb(224, 224, 224);
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: 16fr 10fr 10fr;
+  column-gap: 7%;
+  row-gap: 40px;
+}
+
+@media (max-width: 950px) {
+  .Footer .mainFooter {
+    grid-template-columns: 16fr 10fr;
+    column-gap: 7%;
+  }
+}
+
+@media (max-width: 850px) {
+  .Footer .mainFooter {
+    grid-template-columns: 1fr;
+  }
+}

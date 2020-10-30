@@ -2,12 +2,13 @@
   outline: none;
   border: 0;
   background-color: #fdb813;
-  padding: 1rem 2.5rem;
+  /* padding: 1rem 2.5rem; */
+  width: 20%;
+  height: 55px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   transition: background-color 0.3s;
-  white-space: nowrap;
 }
 
 .Button:hover {

@@ -1,0 +1,15 @@
+.BrandDescription img {
+  width: 125px;
+}
+
+@media (max-width: 850px) {
+  .BrandDescription {
+    width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  .BrandDescription {
+    width: 100%;
+  }
+}
