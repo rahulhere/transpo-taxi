@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./SubHeader.module.css";
 import brandLogo from "./../../../assets/images/logo-image.png";
 import menuImage from "./../../../assets/images/menu.png";
-import Button from "./../../UI/Button/Button";
+import ButtonLink from "../../UI/ButtonLink/ButtonLink";
 import NavigationItems from "../../Navigation/NavigationItems/NavigationItems";
 import { useMediaQuery } from "react-responsive";
 import makeHeaderSticky from "./../../../Utility/makeHeaderSticky";
@@ -28,12 +28,12 @@ const SubHeader = (props) => {
       {useMediaQuery({ query: "(max-width: 1025px)" }) ? null : (
         <NavigationItems />
       )}
-      <Button
+      <ButtonLink
         classes={styles.button}
         style={{ margin: "0 1rem", marginRight: 0 }}
       >
         Book Now
-      </Button>
+      </ButtonLink>
       <img
         className={styles.menu}
         src={menuImage}

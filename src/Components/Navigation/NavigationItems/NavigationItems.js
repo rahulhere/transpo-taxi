@@ -7,10 +7,10 @@ const NavigationItems = () => {
     <nav className={styles.NavigationItems}>
       <ul>
         <NavigationItem link="/">Home</NavigationItem>
-        <NavigationItem link="/">About</NavigationItem>
-        <NavigationItem link="/">Services</NavigationItem>
-        <NavigationItem link="/">Rates</NavigationItem>
-        <NavigationItem link="/">Contact</NavigationItem>
+        <NavigationItem link="/about">About</NavigationItem>
+        <NavigationItem link="/services">Services</NavigationItem>
+        <NavigationItem link="/rates">Rates</NavigationItem>
+        <NavigationItem link="/contact">Contact</NavigationItem>
       </ul>
     </nav>
   );

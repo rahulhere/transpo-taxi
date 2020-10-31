@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./ContactUs.module.css";
-import Button from "./../../UI/Button/Button";
+import ButtonLink from "../../UI/ButtonLink/ButtonLink";
 import phone from "./../../../assets/images/phone.png";
 
 const ContactUs = (props) => {
   return (
     <div className={styles.ContactUs}>
       <h2>Contact Us</h2>
-      <Button
+      <ButtonLink
         style={{
           width: "100%",
           minHeight: "60px",
@@ -17,7 +17,7 @@ const ContactUs = (props) => {
         }}
       >
         Book Online Now
-      </Button>
+      </ButtonLink>
       <div className={styles.callUs}>
         <img src={phone} alt="phone" />
         <span>

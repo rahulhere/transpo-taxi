@@ -1,0 +1,48 @@
+.Card {
+  max-width: 500px;
+  box-shadow: 0 0 15px -5px black;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.Card img {
+  width: 30%;
+  max-width: 80px;
+}
+.Card h4 {
+  color: rgb(48, 48, 48);
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  cursor: pointer;
+}
+.Card p {
+  color: rgb(90, 90, 90);
+  margin-top: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.Card .link {
+  margin-top: auto;
+  color: #fdb813;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .Card {
+    max-width: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .Card {
+    max-width: 500px;
+  }
+}

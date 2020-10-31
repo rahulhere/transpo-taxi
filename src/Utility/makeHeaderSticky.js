@@ -14,7 +14,7 @@ const scrollLogic = (setStyles) => {
       isUpScrolling = false;
       // up animation here
       // console.log("up");
-      setStyles({ top: "-6rem" });
+      setStyles({ top: "-5.2rem" });
     }
   }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling

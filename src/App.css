@@ -1,0 +1,6 @@
+:root {
+  --yellow: #fdb813;
+  --heading-large: 3rem;
+  --heading-small: calc(1.3rem + 3vw);
+  --transition-time: 0.8s;
+}
