@@ -1,0 +1,82 @@
+.InputDiv {
+  --font-size: 1rem;
+  --padding-left: 1rem;
+  --border-width: 3px;
+  --correct-input: #fdb813;
+  --correct-all: #ff8400;
+  --correct-light: #e4cf57;
+}
+
+.slider {
+  position: absolute;
+  bottom: -1;
+  left: 0;
+  height: var(--border-width);
+  background-color: var(--correct-all);
+  width: 0%;
+  transition: width ease-in 0.5s;
+}
+
+.InputDiv {
+  margin-top: 2.2rem;
+  position: relative;
+  border-bottom: var(--border-width) solid var(--correct-light);
+  margin-bottom: 1rem;
+}
+
+.InputDiv input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-left: var(--padding-left);
+  height: 48px;
+  font-size: var(--font-size);
+  color: var(--correct-input);
+  letter-spacing: 0.5px;
+  background-color: transparent;
+}
+
+.InputDiv label {
+  position: absolute;
+  width: 100%;
+  transition: 0.2s;
+  /* make this relative to font-size */
+  line-height: 2.9;
+  padding-left: var(--padding-left);
+  font-size: var(--font-size);
+  color: rgb(233, 233, 233);
+
+  top: 0;
+  left: 0;
+}
+
+.InputDiv input:focus ~ div.slider {
+  width: 100%;
+}
+
+.InputDiv input:valid + label {
+  top: -40%;
+  font-size: 0.85rem;
+  color: var(--correct-all);
+  font-weight: 600;
+}
+
+.invalid .slider {
+  background-color: red;
+}
+
+.invalid input {
+  color: rgb(255, 149, 149);
+}
+
+.invalid label {
+  color: rgb(255, 94, 94);
+}
+
+.invalid input:valid + label {
+  color: rgb(255, 94, 94);
+}
+
+.invalid {
+  border-bottom: var(--border-width) solid rgb(255, 94, 94);
+}

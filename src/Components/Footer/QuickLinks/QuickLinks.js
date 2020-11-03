@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./QuickLinks.module.css";
+import { NavLink } from "react-router-dom";
 
 const QuickLinks = (props) => {
   return (
@@ -8,16 +9,24 @@ const QuickLinks = (props) => {
       <nav>
         <ul>
           <li className="ListItems">
-            <a href="/">Home</a>
+            <NavLink exact activeClassName={styles.active} to="/">
+              Home
+            </NavLink>
           </li>
           <li className="ListItems">
-            <a href="/">Rates</a>
+            <NavLink activeClassName={styles.active} to="/rates">
+              Rates
+            </NavLink>
           </li>
           <li className="ListItems">
-            <a href="/">Services</a>
+            <NavLink activeClassName={styles.active} to="/services">
+              Services
+            </NavLink>
           </li>
           <li className="ListItems">
-            <a href="/">Contact</a>
+            <NavLink activeClassName={styles.active} to="/contact">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>

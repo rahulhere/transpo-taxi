@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./BrandDescription.module.css";
-import brandLogo from "./../../../assets/images/logo-image.png";
+import brandLogo from "./../../../assets/icons/logo-image.png";
 
 const BrandDescription = (props) => {
   return (

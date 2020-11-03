@@ -37,6 +37,7 @@
   }
 
   .NavigationItem a.active {
+    color: #fdb813;
     border-bottom: 0;
   }
 }

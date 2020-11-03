@@ -1,18 +1,28 @@
 import React from "react";
 import styles from "./ContactInfo.module.css";
-import facebook from "./../../../assets/images/facebook.png";
-import twitter from "./../../../assets/images/twitter.png";
-import instagram from "./../../../assets/images/insta.png";
-import phone from "./../../../assets/images/phone.png";
+import facebook from "./../../../assets/icons/facebook.png";
+import twitter from "./../../../assets/icons/twitter.png";
+import instagram from "./../../../assets/icons/insta.png";
+import phone from "./../../../assets/icons/phone.png";
 
 const ContactInfo = () => {
   return (
     <div className={styles.ContactInfo}>
       <div className={styles.mediaHandles}>
         <span>Follow Us:</span>
-        <img src={facebook} alt="facebook" />
-        <img src={twitter} alt="twitter" />
-        <img src={instagram} alt="instagram" />
+        <a href="https://dont_use_fb" target="_blank" rel="noreferrer">
+          <img src={facebook} alt="facebook" />
+        </a>
+        <a href="https://dont_use_twitter_too" target="_blank" rel="noreferrer">
+          <img src={twitter} alt="twitter" />
+        </a>
+        <a
+          href="https://www.instagram.com/rahulhere___/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={instagram} alt="instagram" />
+        </a>
       </div>
       <div className={styles.callUs}>
         <img src={phone} alt="phone" />

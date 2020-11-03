@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./SubHeader.module.css";
-import brandLogo from "./../../../assets/images/logo-image.png";
-import menuImage from "./../../../assets/images/menu.png";
+import brandLogo from "./../../../assets/icons/logo-image.png";
+import menuImage from "./../../../assets/icons/menu.png";
 import ButtonLink from "../../UI/ButtonLink/ButtonLink";
 import NavigationItems from "../../Navigation/NavigationItems/NavigationItems";
 import { useMediaQuery } from "react-responsive";

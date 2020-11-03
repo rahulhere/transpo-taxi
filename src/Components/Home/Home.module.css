@@ -52,10 +52,11 @@
   width: 100%;
 }
 
-.carouTextDiv button {
+.carouTextDiv a {
   background-color: rgba(0, 0, 0, 0.5);
+  border: none;
   border: 2.5px solid rgb(245, 244, 244);
-  outline: none;
+  text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 0.7rem 2rem;
   text-transform: uppercase;
@@ -63,6 +64,11 @@
   cursor: pointer;
   transition: padding var(--transition-time);
   transition: font-size var(--transition-time);
+  transition: transform 0.3s;
+}
+
+.carouTextDiv a:hover {
+  transform: scale(1.1);
 }
 
 /* Description Div Styles */
@@ -91,6 +97,8 @@
   color: var(--yellow);
   font-weight: bold;
   font-size: 1.4rem;
+  text-decoration: none;
+  display: block;
   margin: auto;
   margin-top: 3rem;
   width: 7.5rem;
@@ -156,61 +164,6 @@
   }
 }
 
-.cta {
-  background-color: rgb(53, 51, 51);
-  position: relative;
-  text-align: center;
-}
-
-.cta img {
-  width: 100%;
-  min-height: 400px;
-}
-
-.cta .ctaText {
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.cta .ctaText p {
-  font-weight: 200;
-  margin-bottom: -0.5rem;
-  letter-spacing: 4px;
-  transition: font-size 1s;
-  transition: letter-spacing 1s;
-  font-size: 0.8rem;
-}
-.cta .ctaText h2 {
-  font-size: 3.5rem;
-  margin: 1rem 0;
-  letter-spacing: 1px;
-  transition: font-size 1s;
-}
-
-.cta .ctaText h2 + h2 {
-  margin-top: -1.3rem;
-}
-
-.cta .ctaText h3 {
-  color: #fdb813;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.cta .ctaText h3:hover {
-  transform: scale(1.05);
-}
-
 @media (max-width: 1025px) {
   .gifText p {
     font-size: 3rem;
@@ -229,7 +182,7 @@
     font-size: var(--heading-small);
   }
 
-  .carouTextDiv button {
+  .carouTextDiv a {
     padding: 0.63rem 1.8rem;
     font-size: 0.7rem;
   }
@@ -253,20 +206,5 @@
 
   .lastCard {
     grid-column: auto;
-  }
-
-  .cta .ctaText p {
-    letter-spacing: 2px;
-    font-size: 0.6rem;
-    font-weight: 500;
-  }
-  .cta .ctaText h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 300px) {
-  .cta .ctaText h2 {
-    font-size: 1.8rem;
   }
 }

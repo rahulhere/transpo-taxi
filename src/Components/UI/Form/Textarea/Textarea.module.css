@@ -1,0 +1,86 @@
+.TextareaDiv {
+  --font-size: 1rem;
+  --padding-left: 1rem;
+  --border-width: 3px;
+  --correct-textarea: #fdb813;
+  --correct-all: #ff8400;
+  --correct-light: #e4cf57;
+}
+
+.slider {
+  position: absolute;
+  bottom: -1;
+  left: 0;
+  height: var(--border-width);
+  background-color: var(--correct-all);
+  width: 0%;
+  transition: width ease-in 0.5s;
+}
+
+.TextareaDiv {
+  margin-top: 2.2rem;
+  position: relative;
+  border-bottom: var(--border-width) solid var(--correct-light);
+  margin-bottom: 1rem;
+}
+
+.TextareaDiv textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  width: 100%;
+  padding-left: var(--padding-left);
+  padding-top: 13.2px;
+  padding-bottom: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: var(--font-size);
+  color: var(--correct-textarea);
+  background-color: transparent;
+  letter-spacing: 0.5px;
+}
+
+.TextareaDiv label {
+  position: absolute;
+  width: 100%;
+  transition: 0.2s;
+  /* make this relative to font-size */
+  line-height: 2.8;
+  padding-left: var(--padding-left);
+  font-size: var(--font-size);
+  color: rgb(233, 233, 233);
+
+  top: 0;
+  left: 0;
+}
+
+.TextareaDiv textarea:focus ~ div.slider {
+  width: 100%;
+}
+
+.TextareaDiv textarea:valid + label {
+  top: -20%;
+  font-size: 0.85rem;
+  color: var(--correct-all);
+  font-weight: 600;
+}
+
+.invalid .slider {
+  background-color: red;
+}
+
+.invalid textarea {
+  color: rgb(255, 0, 0);
+}
+
+.invalid label {
+  color: rgb(255, 94, 94);
+}
+
+.invalid textarea:valid + label {
+  color: rgb(255, 94, 94);
+}
+
+.invalid {
+  border-bottom: var(--border-width) solid rgb(255, 129, 129);
+}

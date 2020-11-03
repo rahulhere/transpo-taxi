@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ContactUs.module.css";
 import ButtonLink from "../../UI/ButtonLink/ButtonLink";
-import phone from "./../../../assets/images/phone.png";
+import phone from "./../../../assets/icons/phone.png";
 
 const ContactUs = (props) => {
   return (
@@ -9,9 +9,9 @@ const ContactUs = (props) => {
       <h2>Contact Us</h2>
       <ButtonLink
         style={{
+          display: "block",
           width: "100%",
-          minHeight: "60px",
-          height: "34%",
+          "--height": "65px",
           marginBottom: "1rem",
           fontSize: "1.3rem",
         }}

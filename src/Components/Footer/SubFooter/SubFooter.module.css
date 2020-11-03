@@ -20,4 +20,9 @@
   padding: 5px;
   margin: 0 0.3rem;
   border-radius: 100%;
+  transition: transform 0.3s;
+}
+
+.SubFooter img:hover {
+  transform: scale(1.1);
 }

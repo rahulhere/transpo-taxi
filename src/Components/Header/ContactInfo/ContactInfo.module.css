@@ -20,6 +20,11 @@
 .mediaHandles img {
   width: 1.1rem;
   margin-left: 0.8rem;
+  transition: transform 0.3s;
+}
+
+.mediaHandles img:hover {
+  transform: scale(1.3);
 }
 
 .callUs {
@@ -55,7 +60,7 @@
 @media (max-width: 480px) {
   .mediaHandles {
     width: 80px;
-    display: block;
+    flex-wrap: wrap;
   }
 
   .mediaHandles img {

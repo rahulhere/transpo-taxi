@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Card.module.css";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
@@ -7,7 +8,9 @@ const Card = (props) => {
       <img src={props.image} alt="" />
       <h4>{props.header}</h4>
       <p>{props.description}</p>
-      <p className={styles.link}>{props.linkText}</p>
+      <Link to={props.linkTo} className={styles.link}>
+        {props.linkText}
+      </Link>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 .slick-dots {
-  bottom: 15px;
+  bottom: -10px;
 }
 
 .slick-dots li.slick-active button:before {
@@ -9,5 +9,31 @@
 
 .slick-dots li button:before {
   font-size: 10px;
+  color: white;
+}
+
+.slick-slide div {
+  outline: none;
+}
+
+.slick-prev {
+  left: -55px;
+  width: 28px;
+  height: 28px;
+}
+
+.slick-prev::before {
+  font-size: 2rem;
+  color: white;
+}
+
+.slick-next {
+  right: -55px;
+  width: 28px;
+  height: 28px;
+}
+
+.slick-next::before {
+  font-size: 2rem;
   color: white;
 }

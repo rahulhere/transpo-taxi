@@ -6,10 +6,11 @@ import Slider from "react-slick";
 import "./../../Utility/slick.css";
 import gifImage from "./../../assets/images/lakeside-gif.gif";
 import Card from "./Card/Card";
-import taxi from "./../../assets/images/taxi.png";
-import dollar from "./../../assets/images/dollar.png";
-import calendar from "./../../assets/images/calendar-tick.png";
-import taxiImage from "./../../assets/images/taxi-image.jpg";
+import taxi from "./../../assets/icons/taxi.png";
+import dollar from "./../../assets/icons/dollar.png";
+import calendar from "./../../assets/icons/calendar-tick.png";
+import PageEnding from "./../Page/PageEnding/PageEnding";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const settings = {
@@ -43,7 +44,7 @@ const Home = () => {
           <h4>- Transpo Taxi Service -</h4>
           <h1>mainland's best</h1>
           <h1>taxi company</h1>
-          <button>book now</button>
+          <Link to="/contact">book now</Link>
         </div>
       </div>
       <div className={styles.description}>
@@ -58,7 +59,9 @@ const Home = () => {
           provident illum ullam quia, fugit in ab porro dolorem dolorum
           inventore necessitatibus? Aspernatur veritatis ab ipsa ut.
         </p>
-        <p className={styles.learnMore}>Learn More</p>
+        <Link to="/about" className={styles.learnMore}>
+          Learn More
+        </Link>
       </div>
       <div className={styles.gifDiv}>
         <img src={gifImage} alt="" />
@@ -73,14 +76,14 @@ const Home = () => {
         <Card
           image={taxi}
           header="Our Services"
-          linkTo="/"
+          linkTo="/services"
           linkText="Learn more"
           description="This is just a normal description for and about your content or product or what ever the hell you are trying to sell."
         />
         <Card
           image={dollar}
           header="Our Rates"
-          linkTo="/"
+          linkTo="/rates"
           linkText="Learn more"
           description="Cant write much for rates. Actually its done for testing small lines."
         />
@@ -88,21 +91,13 @@ const Home = () => {
           class={styles.lastCard}
           image={calendar}
           header="Book Ahead"
-          linkTo="/"
+          linkTo="/contact"
           linkText="Book Now"
           description="This is just a normal description for and about your content or product or what ever the hell you are trying to sell."
         />
       </div>
 
-      <div className={styles.cta}>
-        <img src={taxiImage} alt="" />
-        <div className={styles.ctaText}>
-          <p>SIMPLE, QUICK & EASY PROCESS</p>
-          <h2>Book Online</h2>
-          <h2>Ahead of Time</h2>
-          <h3>Get Started</h3>
-        </div>
-      </div>
+      <PageEnding />
     </div>
   );
 };

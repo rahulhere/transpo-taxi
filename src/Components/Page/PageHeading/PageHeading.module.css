@@ -1,0 +1,28 @@
+.Heading {
+  position: relative;
+}
+
+.Heading img {
+  width: 100%;
+  min-height: 300px;
+}
+
+.Heading div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Heading div h1 {
+  color: rgb(233, 232, 232);
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgb(53, 51, 51);
+  font-size: var(--heading-large);
+  margin-top: 3rem;
+}

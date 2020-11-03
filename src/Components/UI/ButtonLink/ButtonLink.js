@@ -1,12 +1,17 @@
 import React from "react";
 import styles from "./ButtonLink.module.css";
+import { Link } from "react-router-dom";
 
-const Button = (props) => {
+const ButtonLink = (props) => {
   return (
-    <button className={[styles.Button, props.classes].join(" ")} {...props}>
+    <Link
+      className={[styles.Button, props.classes].join(" ")}
+      to="/contact"
+      {...props}
+    >
       {props.children}
-    </button>
+    </Link>
   );
 };
 
-export default Button;
+export default ButtonLink;

@@ -1,0 +1,23 @@
+.Icons {
+  max-width: 380px;
+  text-align: center;
+  padding: 2rem 1rem;
+  justify-self: center;
+}
+
+.Icons img {
+  width: 60px;
+  margin: auto;
+}
+
+.Icons h3 {
+  font-size: 1.33rem;
+  color: rgb(44, 44, 44);
+  margin-bottom: 0;
+}
+
+.Icons p {
+  color: rgb(122, 122, 122);
+  margin-top: 0.6rem;
+  letter-spacing: 0.2px;
+}

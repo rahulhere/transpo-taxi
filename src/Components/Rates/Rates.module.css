@@ -1,0 +1,46 @@
+.Rates {
+}
+
+.paragraph {
+  padding: 3rem 6vw;
+  margin: auto;
+  max-width: 1050px;
+}
+
+.paragraph p {
+  color: rgb(122, 122, 122);
+  line-height: 2;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.iconsDiv {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 6rem auto;
+  margin-top: 0;
+  padding: 0 13%;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .iconsDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lastCard {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (max-width: 655px) {
+  .iconsDiv {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  .lastCard {
+    grid-column: auto;
+  }
+}
