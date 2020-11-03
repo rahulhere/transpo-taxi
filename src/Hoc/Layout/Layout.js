@@ -26,7 +26,7 @@ const Layout = (props) => {
       <Header showSideDrawer={setShowSideDrawer} />
       {backdrop}
       <SideDrawer
-        show={showSideDrawer}
+        closeDrawer={setShowSideDrawer}
         styles={{
           transform: showSideDrawer ? "translateX(0)" : "translateX(100%)",
         }}

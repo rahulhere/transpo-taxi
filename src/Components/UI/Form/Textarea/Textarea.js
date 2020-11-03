@@ -16,7 +16,7 @@ const Textarea = (props) => {
         id={props.id}
         value={props.value}
         onChange={props.setValue}
-        maxLength="150"
+        maxLength="200"
         rows="2"
         required
       ></textarea>
